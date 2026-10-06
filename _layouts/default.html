@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | Lean Cyber</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-
 <body>
-  <header>
-    <h1><a href="{{ '/' | relative_url }}">Lean Cyber</a></h1>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/essays/' | relative_url }}">Essays</a>
-    </nav>
-  </header>
+  <div class="page">
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">Lean Cyber</a></h1>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/essays/' | relative_url }}">Essays</a>
+      </nav>
+    </header>
 
-  <main>
-    {{ content }}
-  </main>
+    <main>
+      {{ content }}
+    </main>
 
-  <footer>
-    <p>© {{ site.time | date: "%Y" }} Lean Cyber</p>
-  </footer>
+    <footer>
+      <p>© {{ site.time | date: "%Y" }} Lean Cyber</p>
+    </footer>
+  </div>
 </body>
-</html>
