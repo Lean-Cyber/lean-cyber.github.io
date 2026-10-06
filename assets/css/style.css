@@ -1,21 +1,53 @@
+/* Typography */
 body {
-  font-family: sans-serif;
-  max-width: 800px;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
+/* Header */
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
 }
 
 nav a {
   margin-right: 1rem;
-  text-decoration: none;
+  font-size: 18px;
 }
 
+/* Links */
+a {
+  color: #0000EE; /* classic web blue */
+}
+
+/* Footer */
 footer {
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #666;
+  margin-top: 4rem;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Essay list */
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+main {
+  margin-top: 2rem;
 }
