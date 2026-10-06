@@ -3,15 +3,14 @@ title: "Lean Cyber"
 layout: default
 ---
 
-Lean Cyber is a methodology for building security programs that match the real constraints of the organization.
+Lean Cyber is a way of thinking about security architecture.  
+The idea is simple: every organization has different risks, so every organization needs a different security program.
 
-Most startups do not need enterprise-grade security controls. They need **right-sized architecture**, **risk-driven prioritization**, and **lean processes** that scale as they grow.
+Startups don’t need enterprise controls.  
+They need the smallest set of practices that meaningfully reduce risk.
 
-## What this site covers
-- How to build a lean security architecture function  
-- How to identify the risks that actually matter  
-- How to avoid cargo-cult security  
-- How to scale controls only when the business needs them  
+As companies grow, their risks change.  
+Lean Cyber is about scaling security only when the business needs it, not before.
 
 ## Essays
-Browse the full list of essays on the [Essays page](/essays/).
+See the full list on the [Essays page](/essays/).
