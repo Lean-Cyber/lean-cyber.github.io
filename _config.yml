@@ -1,0 +1,16 @@
+title: "Lean Cyber"
+description: "Security architecture for real-world constraints"
+theme: null
+markdown: kramdown
+
+collections:
+  essays:
+    output: true
+    permalink: /essays/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: essays
+    values:
+      layout: default
