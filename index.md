@@ -15,10 +15,11 @@ layout: default
 </div>
 
 <div class="home-section">
-  <h2 class="section-heading">Essays</h2>
+  <h2 class="section-heading">Featured Essays</h2>
 
   <div class="essay-list">
-    {% for essay in site.essays %}
+    {% assign featured = site.essays | where: "featured", true %}
+    {% for essay in featured %}
       <div class="essay-item">
         <h3 class="essay-title">
           <a href="{{ essay.url | relative_url }}">{{ essay.title }}</a>
