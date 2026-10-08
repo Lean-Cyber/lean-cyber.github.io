@@ -1,5 +1,6 @@
 ---
 title: "Lean Security Architecture"
+layout: essay
 ---
 
 Security architecture should be built around the actual risks an organization faces, not a checklist of enterprise controls.
