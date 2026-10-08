@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign words = content | number_of_words %}
+{% assign reading_time = words | divided_by:200 | ceil %}
+
+<article class="essay">
+  <header class="essay-header">
+    <h1 class="essay-title">{{ page.title }}</h1>
+    <p class="essay-meta">
+      {{ page.date | date: "%B %d, %Y" }} · {{ reading_time }} min read
+    </p>
+  </header>
+
+  <section class="essay-body">
+    {{ content }}
+  </section>
+</article>
