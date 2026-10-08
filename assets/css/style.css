@@ -1,18 +1,24 @@
-/* Global */
+/* --------------------------------------------------
+   FONT
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   background: #f4f4f4;
   color: #1f1f1f;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   line-height: 1.7;
 }
 
-/* Header */
+/* --------------------------------------------------
+   HEADER
+-------------------------------------------------- */
 .site-header {
   border-bottom: 1px solid #d0d0d0;
-  padding: 0.6rem 0; /* slightly tighter */
+  padding: 0.6rem 0;
   position: sticky;
   top: 0;
   background: #f4f4f4;
@@ -24,31 +30,32 @@ html, body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ensures perfect vertical alignment */
+  align-items: center;
   padding: 0 1.5rem;
 }
 
 .brand {
   display: flex;
-  align-items: center; /* aligns logo + title */
-  gap: 0.9rem; /* slightly increased spacing */
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .logo {
-  height: 34px; /* increased from 28px */
+  height: 34px;
   width: auto;
   display: block;
 }
 
 .site-title a {
-  font-size: 26px; /* slightly larger to match logo weight */
+  font-size: 26px;
   font-weight: 600;
   color: #1f1f1f;
   text-decoration: none;
-  line-height: 1; /* prevents vertical drift */
+  line-height: 1;
+  vertical-align:middle;
 }
 
-/* Navigation links */
+/* Navigation */
 .site-nav a {
   margin-left: 1.5rem;
   color: #3a3a3a;
@@ -76,59 +83,13 @@ html, body {
   width: 100%;
 }
 
-/* General link styling */
-a {
-  color: #3a3a3a;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #000;
-}
-
-/* Content */
-.page-content {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-}
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid #d0d0d0;
-  text-align: center;
-  font-size: 16px;
-  color: #555;
-  padding: 2rem 0;
-}
-
-/* Essay layout */
-.essay-header {
-  margin-bottom: 2rem;
-}
-
-.essay-title {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.essay-meta {
-  font-size: 16px;
-  color: #555;
-}
-
-.essay-body {
-  font-size: 20px;
-  line-height: 1.7;
-  color: #1f1f1f;
-}
-/* Homepage Intro */
+/* --------------------------------------------------
+   HOMEPAGE INTRO
+-------------------------------------------------- */
 .home-intro {
   max-width: 760px;
   margin: 0 auto;
-  padding: 1.5rem 1.5rem 2rem; /* reduced top padding */
+  padding: 1.5rem 1.5rem 2rem;
 }
 
 .home-title {
@@ -149,47 +110,200 @@ a:hover {
   line-height: 1.7;
 }
 
-/* Section Heading */
-.section-heading {
-  margin: 2rem 0 1rem;
-  padding: 0 1.5rem;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-/* Featured Essays */
+/* --------------------------------------------------
+   FEATURED ESSAYS
+-------------------------------------------------- */
 .home-section {
   max-width: 760px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
-.home-section .section-heading {
-  margin-bottom: 1.5rem;
+.section-heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
 }
 
 .home-section .essay-list {
-  padding: 0 1.5rem;
+  padding: 0;
 }
 
-/* Homepage featured essay title link */
+.essay-item {
+  margin-bottom: 2rem;
+}
+
+.essay-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.essay-meta {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.essay-description {
+  font-size: 18px;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------
+   ESSAY PAGE
+-------------------------------------------------- */
+.page-content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.essay-header {
+  margin-bottom: 2rem;
+}
+
+.essay-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.essay-meta {
+  font-size: 16px;
+  color: #555;
+}
+
+.essay-body {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #1f1f1f;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+.site-footer {
+  border-top: 1px solid #d0d0d0;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  padding: 2rem 0;
+}
+
+/* --------------------------------------------------
+   MOBILE RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 600px) {
+
+  /* Header */
+  .site-header {
+    padding: 0.5rem 0;
+  }
+
+  .header-inner {
+    padding: 0 1rem;
+  }
+
+  .brand .logo {
+    height: 28px;
+  }
+
+  .site-title a {
+    font-size: 22px;
+  }
+
+  .site-nav a {
+    margin-left: 1rem;
+    font-size: 16px;
+  }
+
+  /* Homepage Intro */
+  .home-intro {
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  .home-title {
+    font-size: 32px;
+  }
+
+  .home-tagline {
+    font-size: 18px;
+  }
+
+  .home-description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  /* Featured Essays */
+  .section-heading {
+    font-size: 24px;
+    padding: 0;
+  }
+
+  .home-section .essay-list {
+    padding: 0;
+  }
+
+  .essay-title {
+    font-size: 20px;
+  }
+
+  .essay-meta {
+    font-size: 14px;
+  }
+
+  .essay-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Essay Page */
+  .page-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .essay-title {
+    font-size: 26px;
+  }
+
+  .essay-body {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+}
+/* Homepage Featured Essay Titles */
 .home-section .essay-title a {
   font-size: 22px;
   font-weight: 600;
-  color: #5b3fd9; /* purple */
-  text-decoration: underline;
+  color: #1f1f1f; /* clean dark text */
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-/* Essay page title link */
-.page-content .essay-title a {
+.home-section .essay-title a:hover {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+/* Essay Page Title */
+.page-content .essay-title {
   font-size: 32px;
   font-weight: 600;
-  color: #5b3fd9; /* purple */
-  text-decoration: underline;
+  margin-bottom: 0.75rem;
 }
 
-/* Optional: hover refinement */
-.home-section .essay-title a:hover,
+.page-content .essay-title a {
+  color: #1f1f1f;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
 .page-content .essay-title a:hover {
-  color: #432fb0; /* slightly darker purple on hover */
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
 }
