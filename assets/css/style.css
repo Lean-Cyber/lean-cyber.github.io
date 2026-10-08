@@ -124,3 +124,35 @@ a:hover {
   line-height: 1.7;
   color: #1f1f1f;
 }
+/* Homepage Intro */
+.home-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.home-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.home-tagline {
+  font-size: 22px;
+  color: #3a3a3a;
+  margin-bottom: 1.5rem;
+}
+
+.home-description {
+  font-size: 20px;
+  color: #1f1f1f;
+  line-height: 1.7;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  padding: 0 1.5rem;
+}
