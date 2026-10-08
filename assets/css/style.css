@@ -156,3 +156,13 @@ a:hover {
   margin: 2rem 0 1rem;
   padding: 0 1.5rem;
 }
+/* Featured Essays */
+.home-section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.home-section .section-heading {
+  margin-bottom: 1.5rem;
+}
