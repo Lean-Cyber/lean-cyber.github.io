@@ -1,7 +1,9 @@
 ---
 title: "Lean Security Architecture"
 layout: essay
+featured: true
 ---
+
 
 Security architecture should be built around the actual risks an organization faces, not a checklist of enterprise controls. Most organizations don’t fail because they lack a massive catalog of safeguards — they fail because they invest in the wrong ones, deploy them inconsistently, or drown themselves in operational overhead that obscures real threats.
 
