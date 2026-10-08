@@ -1,16 +1,16 @@
-/* Full-page layout */
+/* Global layout */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
-  color: #222;
+  background: #f2f2f2; /* modern neutral grey */
+  color: #1f1f1f;       /* deep charcoal */
   font-family: Georgia, serif;
-  font-size: 19px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
-/* Flex container for entire page */
+/* Flex wrapper for footer anchoring */
 .page {
   min-height: 100%;
   display: flex;
@@ -19,9 +19,9 @@ html, body {
 
 /* Centered content column */
 header, main, footer {
-  max-width: 700px;
+  max-width: 760px; /* slightly wider than PG, like Justin Welsh */
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 
 /* Header */
@@ -30,25 +30,42 @@ header {
 }
 
 header h1 {
-  font-size: 32px;
-  margin-bottom: 0.5rem;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.5px; /* modern, subtle */
+  margin-bottom: 0.75rem;
 }
 
 header a {
-  color: #222;
+  color: #1f1f1f;
   text-decoration: none;
 }
 
 nav a {
-  margin-right: 1rem;
-  color: #444;
+  margin-right: 1.5rem;
+  color: #3a3a3a;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 nav a:hover {
   color: #000;
 }
 
-/* Main content grows to push footer down */
+/* Links */
+a {
+  color: #3a3a3a;
+  text-decoration: none;
+  border-bottom: 1px solid #d0d0d0; /* subtle Justin Welsh-style underline */
+  padding-bottom: 2px;
+}
+
+a:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* Main content */
 main {
   flex: 1;
 }
@@ -58,14 +75,6 @@ footer {
   font-size: 16px;
   color: #555;
   padding-bottom: 3rem;
-}
-
-/* Links */
-a {
-  color: #444;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #000;
+  border-top: 1px solid #d0d0d0; /* Lean Cyber twist: architectural foundation line */
+  margin-top: 4rem;
 }
