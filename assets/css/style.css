@@ -171,3 +171,25 @@ a:hover {
 .home-section .essay-list {
   padding: 0 1.5rem;
 }
+
+/* Homepage featured essay title link */
+.home-section .essay-title a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #5b3fd9; /* purple */
+  text-decoration: underline;
+}
+
+/* Essay page title link */
+.page-content .essay-title a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #5b3fd9; /* purple */
+  text-decoration: underline;
+}
+
+/* Optional: hover refinement */
+.home-section .essay-title a:hover,
+.page-content .essay-title a:hover {
+  color: #432fb0; /* slightly darker purple on hover */
+}
