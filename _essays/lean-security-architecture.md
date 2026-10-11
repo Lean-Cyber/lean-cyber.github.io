@@ -2,6 +2,7 @@
 title: "Lean Security Architecture"
 layout: essay
 featured: true
+tags: [Startup, Enterprise]
 ---
 
 
