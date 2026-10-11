@@ -23,6 +23,7 @@ layout: default
       <div class="essay-item">
         <h3 class="essay-title">
           <a href="{{ essay.url | relative_url }}">{{ essay.title }}</a>
+          {% include tags.html tags=essay.tags %}
         </h3>
 
         <p class="essay-meta">
